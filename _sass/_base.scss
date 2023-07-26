@@ -1034,3 +1034,33 @@ nav[data-toggle="toc"] {
     padding-top: 0.5rem;
   }
 }
+
+
+
+/* ---- particles.js container ---- 
+
+  Added by me (smazurchuk) on 7/25/23
+
+*/
+
+#particles-js{
+  position: fixed;
+  // top: 0px;
+  width: 100%;
+  height: 100%;
+  // background-color: #b61924;
+  // background-color: $blue-color;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  // z-index: -1;
+}
+#homeBack{
+  position: relative; //absolute; This makes the selection area smaller
+  z-index: 1;
+  background-color: #d36c6cb6;
+  display: inline-block;
+  color: #f8f8f8;
+  // border: 3px solid #73AD21;
+}
