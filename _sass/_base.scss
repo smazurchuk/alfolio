@@ -1064,3 +1064,13 @@ nav[data-toggle="toc"] {
   color: #f8f8f8;
   // border: 3px solid #73AD21;
 }
+
+#about-main{
+  //position: relative; //absolute; This makes the selection area smaller
+  // z-index: -1;
+  background-color: var(--global-bg-color);
+  opacity: .95;
+  //display: inline-block;
+  // color: #eb12b4;
+  // border: 3px solid #73AD21;
+}
