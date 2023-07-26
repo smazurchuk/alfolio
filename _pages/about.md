@@ -2,11 +2,12 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: > 
+  <a href='#'>Medical College of Wisconsin</a>, MSTP
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: mazurchuk_headshot.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>555 your office number</p>
