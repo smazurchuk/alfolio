@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://blog.smazurchuk.com/alfolio/sitemap.xml
+Sitemap: https://smazurchuk.com/sitemap.xml
