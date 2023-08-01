@@ -10,7 +10,7 @@ profile:
   image: mazurchuk_headshot.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>stephen.mazurchuk@gmail.com</p>
+    <p><a href='mailto:smazurchuk@mcw.edu'>smazurchuk@mcw.edu</a> </p>
 
 
 news: true  # includes a list of news items
@@ -18,6 +18,12 @@ latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+<style>
+H4{color:Red}
+</style>
+
+#### Warning!
+**This website is still under construction**
 
 Hi! Welcome to my site and glad you are here. I'm currently a 5th year graduate student in the lab of Dr. Jeffrey Binder. My research is on semantics and how the brain represents concepts! 
 
