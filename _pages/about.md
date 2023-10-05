@@ -11,6 +11,8 @@ profile:
   image_circular: false # crops the image to make it circular
   address: >
     <p><a href='mailto:smazurchuk@mcw.edu'>smazurchuk@mcw.edu</a> </p>
+        <p><a href='https://mcw-edu.zoom.us/j/9575117762?pwd=WDZBTWY4YmlzcFZQNVdpSHg2SDR5dz09'>zoom link</a> </p>
+
 
 
 news: true  # includes a list of news items
