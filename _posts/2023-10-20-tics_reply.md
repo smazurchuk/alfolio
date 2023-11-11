@@ -33,11 +33,11 @@ _styles: >
 
 {% include figure.html path="assets/img/frisby_et_al.png" class="img-fluid rounded z-depth-1" %}
 
-There was a nicely written review article published at the beginning of 2023 in Trends in Cognitive Sciences<d-cite key="Frisby2023"></d-cite>. It is clear much work went into the article, and I am a fan of the endeavor undertaken by the paper's authors. However, while I think an important distinction between independent and conjoint codes is made throughout the paper, I am also afraid that there is a misrepresentation of this distinction throughout the paper. I'm writing this to make clear what I think the misunderstanding is and bring it to the authors / readers' attention.  
+There was a nicely written review article published at the beginning of 2023 in Trends in Cognitive Sciences<d-cite key="Frisby2023"></d-cite> ([link](https://doi.org/10.1016/j.tics.2022.12.006)). It is clear much work went into the article, and I am a fan of the endeavor undertaken by the paper's authors. However, while I think an important distinction between independent and conjoint codes is made throughout the paper, if my understanding is correct, I am also afraid that there might be a misrepresentation of this distinction throughout the paper. I'm writing this to make clear what I think the misunderstanding is and bring it to the attention of the authors.  
 
 # Problem Statement 
 
-Frisby et. al. makes a distinction between *independent* and *conjoint* codes and, while I agree this is a meaningful distinction, the paper makes several incorrect claims about how the presence of a conjoint code can be assessed. A general problem throughout the paper is the repeated claim that analysis techniques that "depend on activation patterns across multiple units" are capable of detecting "conjoint" codes. Throughout the rest of this blog-post, I'll illustrate that it is in fact only *<u>non-linear</u>* analysis techniques that are capable of detecting conjoint codes, and most commonly used multivariate pattern analysis (MVPA) techniques such as representational similarity analysis (RSA), and linear support vector machines (SVMs) are not sensitive to conjoint codes. 
+Frisby et. al. makes a distinction between *independent* and *conjoint* codes and, while I agree this is a meaningful distinction, the paper appears to makes several incorrect claims about how the presence of a conjoint code can be assessed. Throughout the paper, there is the repeated claim that analysis techniques that "depend on activation patterns across multiple units" are capable of detecting "conjoint" codes. Throughout the rest of this blog-post, I'll illustrate that it is in fact only *<u>non-linear</u>* analysis techniques that are capable of detecting what the paper calls conjoint codes, and most commonly used multivariate pattern analysis (MVPA) techniques such as representational similarity analysis (RSA), and linear support vector machines (SVMs) are not sensitive to conjoint codes. 
 
 ## Background 
 
@@ -94,7 +94,7 @@ This distinction is made clear in **Figure 2B** in the paper using the canonical
 
 This classification problem illustrates a case where only knowing one feature provides no information about the category membership of a datapoint (shown in the marginal distributions). However, knowing the value of both `x1` and `x2` it is easy to perfectly classify each datapoint. 
 
-What Frisby et. al. fails to draw attention to is that **only non-linear systems can solve the XOR problem**. It is not the case that multivariate methods are, in general, able to detect conjoint codes. Linear SVMs, RSA, and vertex-wise encoding models are all not sensitive to information represented in conjoint codes. On this account, the paper makes incorrect statements. Quoting: 
+What Frisby et. al. don't draw attention to is that **only non-linear systems can solve the XOR problem**. It is not the case that multivariate methods are, in general, able to detect conjoint codes. Linear SVMs, RSA, and vertex-wise encoding models are all not sensitive to information represented in conjoint codes. On this account, the paper makes incorrect statements. Quoting: 
 
 > Because neural similarities are computed across multiple units, the technique \[RSA\] can detect conjoint or independent codes. 
 
@@ -112,7 +112,7 @@ Frisby and colleagues compiled a list of 100 papers that they go through to dete
 
 # RSA and XOR problem 
 
-The shown **XOR** problem has 32 datapoints that belong to two distinct classes. The task is to use the value of `x1` and `x2` to determine the class of the datapoint. As stated, the result<d-footnote>perhaps surprising</d-footnote> is that *no linear classifier* can perform this task. This property is what Saskia et. al. refers to as independence, or that class identity can't be decoded by looking at any single feature but can be decoded by looking at both simultaneously.  
+The shown **XOR** problem has 32 datapoints that belong to two distinct classes. The task is to use the value of `x1` and `x2` to determine the class of the datapoint. As stated, the result<d-footnote>perhaps surprising</d-footnote> is that *no linear classifier* can perform this task. This property is what Frisby et. al. refer to as independence, or that class identity can't be decoded by looking at any single feature but can be decoded by looking at both simultaneously.  
 
 To show RSA fails to capture non-linear categorical structure, we can create an RDM from the data points and the target categories 
 
@@ -162,55 +162,5 @@ They show that RSA and linear vertex-wise encoding models are actually capturing
 
 > The main purpose of this paper was to provide a clear definition of one important class of models —representational models— and to compare three important approaches of testing these. We have shown that PCM, RSA and encoding analysis are all closely related, testing hypotheses about the distribution of activity profiles. Moreover, all three approaches, in their dominant implementations, are sensitive only to distinctions between representations that are reflected in the second moment of the activity profiles. Thus, these three methods are properly understood as components of a single analytical framework.
 
-Thanks for reading! Feel free to comment!
-
-<!-- 
-
-demonstrates that to know whether MVPC is decoding a joint code, one needs to investigate the details of the SVM implication in each paper.
-
-# Other conceptual problems
-
-
-
-
-
-# Another problem
-
- 
-
-
- 
-
-Further, as I'll elaborate on below, RSA and encoding models are sensitive to the **same** information. Lastly, MVPC may or may not be sensitve to conjoint codes depending on the classifier. Support vector machines that use a linear kernel are *NOT* sensitive to conjoint codes as they still only create linear hyperplanes.  
-
- 
-
-What the article misses is a great insight that I think is made clear in Diedrichson and Kriegeskorte (2017). That  
-
- 
-
- 
-# Another false dichotomy
- 
-
-. Quoting from the article: 
-
- 
-
-The section titled Independent and conjoint codes makes a false distrinction. To quote the relevant distinctions 
-
- 
-
->  Categorical and feature-based approaches both suggest that each unit **indepedently** encodes a piece of semantic information: its activity expresses the presence or absence of that information […] regargles of the state of other units. 
-
- 
-
-The next paragraph continues: 
-
- 
-
-> By contrast, vector space hypotheses suggest that units conjointly encode a representational space, and that semantic information is expressed in the activity pattern considered across mutliple units such that single-unit activation may not be interpretable without consideration of other units in the ensemble. 
-
- -->
-
+Thanks for reading! Sincerely, I know that there is a far-from-zero likelihood that *I'm mis-interpreting* some component(s) of the paper.  Feel free to email me or comment with thoughts!
 
