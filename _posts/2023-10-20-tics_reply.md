@@ -13,22 +13,6 @@ authors:
     affiliations:
       name: MCW, Milwaukee
 
-_styles: >
-  .fake-img {
-    background: #bbb;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 12px;
-  }
-  .fake-img p {
-    font-family: monospace;
-    color: white;
-    text-align: left;
-    margin: 12px 0;
-    text-align: center;
-    font-size: 16px;
-  }
-
 ---
 
 {% include figure.html path="assets/img/frisby_et_al.png" class="img-fluid rounded z-depth-1" %}
@@ -37,7 +21,7 @@ There was a nicely written review article published at the beginning of 2023 in 
 
 # Problem Statement 
 
-Frisby et. al. makes a distinction between *independent* and *conjoint* codes and, while I agree this is a meaningful distinction, the paper appears to makes several incorrect claims about how the presence of a conjoint code can be assessed. Throughout the paper, there is the repeated claim that analysis techniques that "depend on activation patterns across multiple units" are capable of detecting "conjoint" codes. Throughout the rest of this blog-post, I'll illustrate that it is in fact only *<u>non-linear</u>* analysis techniques that are capable of detecting what the paper calls conjoint codes, and most commonly used multivariate pattern analysis (MVPA) techniques such as representational similarity analysis (RSA), and linear support vector machines (SVMs) are not sensitive to conjoint codes. 
+Frisby et. al. make a distinction between *independent* and *conjoint* codes and, while I agree this is a meaningful distinction, the paper appears to make several incorrect claims about how the presence of a conjoint code can be assessed. Throughout the paper, there is the repeated claim that analysis techniques that "depend on activation patterns across multiple units" are capable of detecting "conjoint" codes. Throughout the rest of this blog-post, I'll illustrate that it is in fact only *<u>non-linear</u>* analysis techniques that are capable of detecting what the paper calls conjoint codes, and most commonly used multivariate pattern analysis (MVPA) techniques such as representational similarity analysis (RSA), and linear support vector machines (SVMs) are not sensitive to conjoint codes. 
 
 ## Background 
 
@@ -92,7 +76,7 @@ This distinction is made clear in **Figure 2B** in the paper using the canonical
 
 {% enddetails %} 
 
-This classification problem illustrates a case where only knowing one feature provides no information about the category membership of a datapoint (shown in the marginal distributions). However, knowing the value of both `x1` and `x2` it is easy to perfectly classify each datapoint. 
+This classification problem illustrates a case where only knowing one feature provides no information about the category membership of a datapoint (shown in the marginal distributions). However, knowing the value of both `x1` and `x2` it is easy to perfectly classify each data point. 
 
 What Frisby et. al. don't draw attention to is that **only non-linear systems can solve the XOR problem**. It is not the case that multivariate methods are, in general, able to detect conjoint codes. Linear SVMs, RSA, and vertex-wise encoding models are all not sensitive to information represented in conjoint codes. On this account, the paper makes incorrect statements. Quoting: 
 
@@ -154,13 +138,13 @@ This last figure shows that even having a degree 2 polynomial basis function all
 
 # Why it matters
 
-Although it appears to me that conjoint and independent codes are misrepresented throughout the paper, I do want to emphasize that the paper points to an interesting and distinction. That is, while RSA, linear SVMs, and (regularized) encoding models cannot detect conjoint codes, the question still stands about whether any type of information is conjointly encoded in the brain. 
+Although it appears to me that conjoint and independent codes are misrepresented throughout the paper, I do want to emphasize that the paper points to an interesting distinction. That is, while RSA, linear SVMs, and (regularized) encoding models cannot detect conjoint codes, the question still stands about whether any type of information is conjointly encoded in the brain. 
 
-Properly understanding the relation between the multivariate methods is important so that researchers have build off of a common understanding. For me, one central paper that has shaped/formed my understanding is one by Jörn Diedrichsen and Nikolaus Kriegeskorte<d-cite key="Diedrichsen2017"></d-cite>.
+Properly understanding the relation between the multivariate methods is important so that researchers can build off of a common understanding. For me, one central paper that has shaped/formed my understanding is one by Jörn Diedrichsen and Nikolaus Kriegeskorte<d-cite key="Diedrichsen2017"></d-cite>.
 
-They show that RSA and linear vertex-wise encoding models are actually capturing the same information! If you'll excuse the long quote, I think their conclusion captures the important take-away. 
+They show that RSA and linear vertex-wise encoding models are actually capturing the same information! If you'll excuse the long quote, I think their conclusion captures the important takeaway. 
 
 > The main purpose of this paper was to provide a clear definition of one important class of models —representational models— and to compare three important approaches of testing these. We have shown that PCM, RSA and encoding analysis are all closely related, testing hypotheses about the distribution of activity profiles. Moreover, all three approaches, in their dominant implementations, are sensitive only to distinctions between representations that are reflected in the second moment of the activity profiles. Thus, these three methods are properly understood as components of a single analytical framework.
 
-Thanks for reading! Sincerely, I know that there is a far-from-zero likelihood that *I'm mis-interpreting* some component(s) of the paper.  Feel free to email me or comment with thoughts!
+Thanks for reading! Sincerely, I know that there is a far-from-zero likelihood that *I'm misinterpreting* some component(s) of the paper.  Feel free to email me or comment with your thoughts!
 
