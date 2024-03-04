@@ -569,6 +569,7 @@ footer.sticky-bottom {
 
   h2.bibliography {
     // color: var(--global-divider-color); // removed this to darken the text
+    color: var(--global-text-color); // Force it lighter
     font-weight: bolder; // Seems nicer
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
