@@ -302,7 +302,7 @@ scholar:
   group_order: descending
 
   type_names:
-      abstract : "Abstracts"
+      misc: "Abstracts"
 
 
 
