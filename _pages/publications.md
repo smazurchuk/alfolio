@@ -6,6 +6,8 @@ description: Publications and abstracts in reverse chronological order. Generate
 nav: true
 nav_order: 1
 ---
+Unfortunately, due to copyright, I am unable to post some of the formatted manuscripts on my personal website. If you would like access to the final formatted version, please do not hesitate to send me an email! [smazurchuk@mcw.edu](mailto:smazurchuk@mcw.edu)
+
 <!-- _pages/publications.md -->
 <div class="publications">
 
