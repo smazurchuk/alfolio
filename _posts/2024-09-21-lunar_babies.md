@@ -2,7 +2,7 @@
 layout: distill
 title: Babies and Moons
 date: 2024-09-21
-featured: true
+featured: false
 giscus_comments: true
 _styles: >
   .ovf {

@@ -2,7 +2,7 @@
 layout: distill
 title: Rock Island Story
 date: 2024-07-14
-featured: true
+featured: false
 giscus_comments: true
 _styles: >
   .ovf {
