@@ -6,19 +6,88 @@
     - name: Languages
       value: English
     - name: Email
-      value: stephen.mazurchuk@gmail.com
+      value: smazurchuk@mcw.edu
+    - name: Website
+      value: smazurchuk.com
 
 - title: Education
   type: time_table
   contents:
+    - title: Doctor of Medicine
+      institution: Medical College of Wisconsin, Milwaukee, WI
+      year: 2026
     - title: PhD, Biophysics
-      institution: The Medical College of Wisconsin, Milwaukee, WI
+      institution: Medical College of Wisconsin, Milwaukee, WI
       year: 2024
       description: >
-        Title: An experiential Account of Semantic Category Organization in the Brain
-
+        Dissertation: An Experiential Account of Category Specific Deficits
     - title: BS, Biomedical Engineering
-      institution: The State Univeristy of New York at Buffalo, Buffalo, NY
+      institution: State University of New York at Buffalo, Buffalo, NY
       year: 2017
 
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: PhD Graduate Student
+      institution: Medical College of Wisconsin, Milwaukee, WI
+      year: 2019 - 2024
+    - title: Rotating Research Student
+      institution: Medical College of Wisconsin, Milwaukee, WI
+      year: 2018
+    - title: NSF-Funded Summer Researcher
+      institution: BioXFEL, University of Wisconsin - Milwaukee, Milwaukee, WI
+      year: 2016 - 2017
+    - title: Summer Research Student
+      institution: University at Buffalo, Buffalo, NY
+      year: 2014
 
+- title: Leadership & Mentoring
+  type: time_table
+  contents:
+    - title: MSTP M3 Student Representative
+      institution: Medical College of Wisconsin, Milwaukee, WI
+      year: 2024
+    - title: MSTP Programming Interest Group Lead
+      institution: Medical College of Wisconsin, Milwaukee, WI
+      year: 2023
+    - title: Biophysics Graduate Student Representative
+      institution: Medical College of Wisconsin, Milwaukee, WI
+      year: 2023
+    - title: Academic Bowl Vice President
+      institution: University at Buffalo, Buffalo, NY
+- title: Volunteer Experience
+  type: time_table
+  contents:
+    - title: Medical College of Wisconsin BrainExpo Volunteer
+      institution: Milwaukee, WI
+      year: 2023, 2024
+    - title: Kinship Community Food Center Volunteer
+      institution: Milwaukee, WI
+      year: 2018-2025
+    - title: Saturday Free Clinic for the Uninsured 
+      year: 2018
+    - title: Greater Milwaukee Free Clinic Volunteer
+      institution: Milwaukee, WI
+      year: 2018
+
+- title: Honors & Awards
+  type: time_table
+  contents:
+    - title: Medical Student Excellence Award
+      institution: American Academy of Neurology
+      year: 2026
+    - title: GSA Travel Award
+      institution: Medical College of Wisconsin
+      year: 2021
+    - title: Travel Award
+      institution: BioXFEL
+      year: 2016
+    - title: Study Abroad Award
+      institution: University at Buffalo Honors College
+      year: 2015
+    - title: 2014 Undergraduate Dean's Research Conference Scholarship
+      institution: University at Buffalo
+      year: 2014
+    - title: CURCA Undergraduate Research Grant
+      institution: University at Buffalo
+      year: 2014

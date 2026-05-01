@@ -4,6 +4,6 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 4
-# cv_pdf: example_pdf.pdf
-description: Please find an extremely cursory overview of my training below
+#cv_pdf: Mazurchuk_CV.pdf
+description: Please find a brief overview of some of my training below
 ---
