@@ -6,7 +6,7 @@
     - name: Languages
       value: English
     - name: Email
-      value: smazurchuk@mcw.edu
+      value: stephen.mazurchuk@gmail.com
     - name: Website
       value: smazurchuk.com
 
@@ -33,14 +33,17 @@
       year: 2019 - 2024
     - title: Rotating Research Student
       institution: Medical College of Wisconsin, Milwaukee, WI
-      year: 2018
+      year: 2017 - 2018
     - title: NSF-Funded Summer Researcher
       institution: BioXFEL, University of Wisconsin - Milwaukee, Milwaukee, WI
-      year: 2016 - 2017
+      year: 2015 - 2016
     - title: Summer Research Student
       institution: University at Buffalo, Buffalo, NY
       year: 2014
-
+    - title: High School Summer Research Experience
+      institution: Roswell Park Comprehensive Cancer Center
+      year: 2012
+  
 - title: Leadership & Mentoring
   type: time_table
   contents:
@@ -55,6 +58,7 @@
       year: 2023
     - title: Academic Bowl Vice President
       institution: University at Buffalo, Buffalo, NY
+      year: 2016
 - title: Volunteer Experience
   type: time_table
   contents:
@@ -85,7 +89,7 @@
     - title: Study Abroad Award
       institution: University at Buffalo Honors College
       year: 2015
-    - title: 2014 Undergraduate Dean's Research Conference Scholarship
+    - title: Undergraduate Dean's Research Conference Scholarship
       institution: University at Buffalo
       year: 2014
     - title: CURCA Undergraduate Research Grant

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Applied neurology for residency!
+Applied neurology for residency
